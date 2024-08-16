@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from '../logo.svg';
-import './project.css';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import './projectList.css';
 
-import Button from '@mui/material/Button';
-import {CardActions, CardMedia, Typography} from "@mui/material";
 import Project from "./Project";
 
 function ProjectList() {
     let projects = [{
-        index: 0,
-        imageUrl: "https://materializecss.com/images/sample-1.jpg",
-        projectTitle: "Enseignement SNT/NSI",
-        projectDetails: "A simple web site containing most of my teacher courses. Covers high school computer lessons",
-    }]
+        imageUrl: "https://c.pxhere.com/images/6c/4b/c5c14f60fac42fe6354420cfdea8-1458949.jpg!d",
+        projectTitle: "Personal Blog",
+        projectDetails: "A blog covering all my past and current projects",
+    },
+        {
+            imageUrl: "https://materializecss.com/images/sample-1.jpg",
+            projectTitle: "Enseignement SNT/NSI",
+            projectDetails: "A simple web site containing most of my teacher courses. Covers high school computer lessons",
+        },
+    ]
 
     return (
-        <Project person={{name: 'Lin Lanying', imageId: '1bX5QH6'}}
-                 size={100} projectTitle={"Enseignement SNT/NSI"}/>
+        <div id="projects-container">
+            {projects.map((item) => (
+                <Project projectTitle={item.projectTitle} imageUrl={item.imageUrl}
+                         projectDetails={item.projectDetails}/>
+
+            ))}
+
+        </div>
     );
 }
 

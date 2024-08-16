@@ -1,23 +1,23 @@
 import React from 'react';
 import logo from '../logo.svg';
-import './project.css';
+import './projectList.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 import Button from '@mui/material/Button';
 import {CardActions, CardMedia, Typography} from "@mui/material";
 
-function Project({ person, size,projectTitle }: {person:any, size:any, projectTitle: any}) {
+function Project({ projectTitle, imageUrl, projectDetails }: {projectTitle: any,imageUrl:any, projectDetails: any}) {
     let index = 0;
-    let imageUrl= "https://materializecss.com/images/sample-1.jpg";
+    // let imageUrl= "https://materializecss.com/images/sample-1.jpg";
     // let projectTitle = "Enseignement SNT/NSI";
-    let projectDetails = "A simple web site containing most of my teacher courses. Covers high school computer lessons";
+    // let projectDetails = "A simple web site containing most of my teacher courses. Covers high school computer lessons";
   return (
       <div>
       <Card sx={{ maxWidth: 345 }}>
           <CardMedia
               sx={{ height: 140 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
+              image={imageUrl}
               title="green iguana"
           />
           <CardContent>
@@ -25,8 +25,7 @@ function Project({ person, size,projectTitle }: {person:any, size:any, projectTi
                   {projectTitle}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over 6,000
-                  species, ranging across all continents except Antarctica
+                  {projectDetails}
               </Typography>
           </CardContent>
           <CardActions>
@@ -34,13 +33,6 @@ function Project({ person, size,projectTitle }: {person:any, size:any, projectTi
               <Button size="small">Learn More</Button>
           </CardActions>
       </Card>
-      <img
-          className="avatar"
-          src={imageUrl}
-          alt={person.name}
-          width={size}
-          height={size}
-      />
       </div>
     // <div className="Card">
     //     <div className="col s10 m4">
