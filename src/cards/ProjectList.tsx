@@ -14,6 +14,11 @@ function ProjectList() {
             projectTitle: "Enseignement SNT/NSI",
             projectDetails: "A simple web site containing most of my teacher courses. Covers high school computer lessons",
         },
+        {
+            imageUrl: "https://mui.com/static/images/cards/contemplative-reptile.jpg",
+            projectTitle: "Kavu Déchet",
+            projectDetails: "An environnemental  project",
+        },
     ]
 
     return (
