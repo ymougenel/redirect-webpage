@@ -45,9 +45,27 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-# Init
+# Installation
 
 ```bash 
 npx create-react-app redirect-webpage-app --template typescript
 ```
+```bash 
 npm build
+```
+npm build
+
+# 
+## Docker
+https://mherman.org/blog/dockerizing-a-react-app/
+[Node docker image](https://hub.docker.com/_/node)
+
+## CI/CD
+[Github metadata-action](https://github.com/docker/metadata-action) **TODO readthrough**
+[Github publish-action](https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images) **TODO readthrough**
+
+## K8
+```bash 
+kubectl get [all/services/pods/...]
+kubectl apply -f .
+```
