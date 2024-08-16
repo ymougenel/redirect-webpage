@@ -9,13 +9,17 @@ import {CardActions, CardMedia, Typography} from "@mui/material";
 import Project from "./Project";
 
 function ProjectList() {
-    let index = 0;
-    let imageUrl= "https://materializecss.com/images/sample-1.jpg";
-    let projectTitle = "Enseignement SNT/NSI";
-    let projectDetails = "A simple web site containing most of my teacher courses. Covers high school computer lessons";
-  return (
-      <Project />
-  );
+    let projects = [{
+        index: 0,
+        imageUrl: "https://materializecss.com/images/sample-1.jpg",
+        projectTitle: "Enseignement SNT/NSI",
+        projectDetails: "A simple web site containing most of my teacher courses. Covers high school computer lessons",
+    }]
+
+    return (
+        <Project person={{name: 'Lin Lanying', imageId: '1bX5QH6'}}
+                 size={100} projectTitle={"Enseignement SNT/NSI"}/>
+    );
 }
 
-export default Project;
+export default ProjectList;
