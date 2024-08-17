@@ -6,6 +6,7 @@ function App() {
     return (
         <div className="App">
             <h1>You seem to be lost!</h1>
+            <p>/learn react/i</p>
             <iframe title="gandalf_gif" src="https://giphy.com/embed/FPjbHO0jJxGsE" width="480" height="269"
                     className="giphy-embed" allowFullScreen></iframe>
             <p></p>
