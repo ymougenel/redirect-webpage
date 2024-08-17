@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 import Button from '@mui/material/Button';
-import {CardActions, CardMedia, Typography} from "@mui/material";
+import {CardActions, CardMedia, styled, Typography} from "@mui/material";
 
 function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, siteUrl, githubURL, learnMoreLink}: { //TODO define righ props types
     projectTitle: any,
@@ -17,10 +17,14 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
     githubURL: any,
 
 }) {
+    const StyledCard = styled(Card)(({ theme }) => ({
+        transition: "transform 0.15s ease-in-out",
+        "&:hover": { transform: "scale3d(1.02, 1.02, 1)" },
+    }))
     // TODO: use global borderTop config (var???)
     return (
         <div>
-            <Card sx={{width: 420, boxShadow: "11px 7px 5px 2px black"}}>
+            <StyledCard sx={{width: 420, boxShadow: "11px 7px 5px 2px black"}}>
                 <CardMedia
                     sx={{height: 140}}
                     image={imageUrl}
@@ -50,7 +54,7 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
                         // </div>
                     ) : (<p></p>)}
                 </CardActions>
-            </Card>
+            </StyledCard>
         </div>
         // <div className="Card">
         //     <div className="col s10 m4">
