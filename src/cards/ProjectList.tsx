@@ -52,15 +52,15 @@ function ProjectList() {
     ]
 
     return (
-        <div id="projects-container">
-            {projects.map((item) => (
-                <Project projectTitle={item.projectTitle} imageUrl={item.imageUrl}
-                         projectDetails={item.projectDetails} moreDetails={item.moreDetails} siteUrl={item.siteURL}
-                         learnMoreLink={item.learnMoreLink} status={item.status} githubURL={item.githubURL}/>
+            <div id="projects-container">
+                {projects.map((item) => (
+                    <Project projectTitle={item.projectTitle} imageUrl={item.imageUrl}
+                             projectDetails={item.projectDetails} moreDetails={item.moreDetails} siteUrl={item.siteURL}
+                             learnMoreLink={item.learnMoreLink} status={item.status} githubURL={item.githubURL}/>
 
-            ))}
+                ))}
 
-        </div>
+            </div>
     );
 }
 
