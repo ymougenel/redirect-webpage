@@ -50,7 +50,8 @@ function ProjectList() {
         <div id="projects-container">
             {projects.map((item) => (
                 <Project projectTitle={item.projectTitle} imageUrl={item.imageUrl}
-                         projectDetails={item.projectDetails} moreDetails={item.moreDetails} siteUrl={item.siteURL} learnMoreLink={item.learnMoreLink}/>
+                         projectDetails={item.projectDetails} moreDetails={item.moreDetails} siteUrl={item.siteURL}
+                         learnMoreLink={item.learnMoreLink}/>
 
             ))}
 

@@ -6,11 +6,11 @@ function App() {
     return (
         <div className="App">
             <h1>You seem to be lost!</h1>
-            <iframe src="https://giphy.com/embed/FPjbHO0jJxGsE" width="480" height="269"
+            <iframe title="gandalf_gif" src="https://giphy.com/embed/FPjbHO0jJxGsE" width="480" height="269"
                     className="giphy-embed" allowFullScreen></iframe>
             <p></p>
             <h1>Are you looking for any of those?</h1>
-            <br />
+            <br/>
             <ProjectList/>
             {/*<header className="App-header">*/}
             {/*  <img src={logo} className="App-logo" alt="logo" />*/}

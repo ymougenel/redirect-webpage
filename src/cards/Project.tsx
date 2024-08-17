@@ -14,17 +14,16 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, siteUrl, 
     siteUrl: any
     learnMoreLink: any
 }) {
-    let index = 0;
-   // TODO: use global borderTop config (var???)
+    // TODO: use global borderTop config (var???)
     return (
         <div>
-            <Card sx={{ width: 420, boxShadow: "11px 7px 5px 2px black"}}>
+            <Card sx={{width: 420, boxShadow: "11px 7px 5px 2px black"}}>
                 <CardMedia
                     sx={{height: 140}}
                     image={imageUrl}
                     title="green iguana"
                 />
-                <CardContent style={{ borderTop: ' 2px solid rgba(160,160,160,0.2)'}} >
+                <CardContent style={{borderTop: ' 2px solid rgba(160,160,160,0.2)'}}>
                     <Typography gutterBottom variant="h5" component="div">
                         {projectTitle}
                     </Typography>
@@ -32,7 +31,7 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, siteUrl, 
                         {projectDetails}
                     </Typography>
                 </CardContent>
-                <CardActions style={{ borderTop: ' 2px solid rgba(160,160,160,0.2)'}} >
+                <CardActions style={{borderTop: ' 2px solid rgba(160,160,160,0.2)'}}>
                     <Button size="small" href={siteUrl}>See Website</Button>
                     {moreDetails ? (
                         <Button size="small" href={learnMoreLink}>{moreDetails}</Button>
