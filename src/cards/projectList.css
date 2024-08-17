@@ -1,6 +1,8 @@
 #projects-container {
     padding-top: 20px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #919196;
     height: 90%;

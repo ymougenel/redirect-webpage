@@ -37,7 +37,6 @@ function ProjectList() {
             siteURL: "http://nsi.ymougenel.com/",
             status: "[Running, NOT_MAINTAINED]"
         },
-
         // {
         //     imageUrl: "https://mui.com/static/images/cards/contemplative-reptile.jpg",
         //     projectTitle: "Un autre projet",

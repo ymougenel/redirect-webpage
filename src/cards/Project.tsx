@@ -31,7 +31,7 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, siteUrl, 
                         {projectDetails}
                     </Typography>
                 </CardContent>
-                <CardActions style={{borderTop: ' 2px solid rgba(160,160,160,0.2)'}}>
+                <CardActions style={{borderTop: ' 2px solid rgba(160,160,160,0.2)', marginLeft: "5%" }}>
                     <Button size="small" href={siteUrl}>See Website</Button>
                     {moreDetails ? (
                         <Button size="small" href={learnMoreLink}>{moreDetails}</Button>
