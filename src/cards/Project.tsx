@@ -44,7 +44,7 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
                     {githubURL !== "NONE" ? (
                         // <div style={{display: "flex", flexDirection: "row", alignItems: "flex-end"}}>
                             <a href={githubURL}>
-                                <img style={{height: "30px"}}
+                                <img style={{height: "30px"}} alt="github_URL"
                                      src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"/>
                             </a>
                         // </div>
