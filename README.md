@@ -1,3 +1,5 @@
+![Test & Linter CI](https://github.com/ymougenel/redirect-webpage/workflows/Test%20&%20Linter/badge.svg)
+![Deploy Docker Image](https://github.com/ymougenel/redirect-webpage/workflows/Publish%20Docker%20Image/badge.svg)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
