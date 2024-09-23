@@ -1,3 +1,4 @@
+[![License](https://img.shields.io/badge/License-Mozilla%202.0-blue.svg)]([https://opensource.org/licenses/Apache-2.0](https://opensource.org/license/mpl-2-0))
 ![Test & Linter CI](https://github.com/ymougenel/redirect-webpage/workflows/Test%20&%20Linter/badge.svg)
 ![Deploy Docker Image](https://github.com/ymougenel/redirect-webpage/workflows/Publish%20Docker%20Image/badge.svg)
 # Getting Started with Create React App
