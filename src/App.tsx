@@ -4,13 +4,13 @@ import ProjectList from "./cards/ProjectList";
 
 function App() {
     return (
-        <div className="App">
+        <div className="background">
             {/*<h1>You seem to be lost!</h1>*/}
             {/*<iframe title="gandalf_gif" src="https://giphy.com/embed/FPjbHO0jJxGsE" width="480" height="269"*/}
             {/*        className="giphy-embed" allowFullScreen></iframe>*/}
             <br />
             <br />
-            <h1>Are you looking for any of those projects?
+            <h1 className="question">Are you looking for any of those projects?
                 <ProjectList/></h1>
             {/*<header className="App-header">*/}
             {/*  <img src={logo} className="App-logo" alt="logo" />*/}

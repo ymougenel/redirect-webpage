@@ -24,13 +24,12 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
     // TODO: use global borderTop config (var???)
     return (
         <div>
-            <StyledCard sx={{width: 420, boxShadow: "11px 7px 5px 2px black"}}>
-                <CardMedia
-                    sx={{height: 140}}
+            <StyledCard className="card">
+                <CardMedia className="card-media"
                     image={imageUrl}
                     title="green iguana"
                 />
-                <CardContent style={{borderTop: ' 2px solid rgba(160,160,160,0.2)'}}>
+                <CardContent className="card-content">
                     <Typography gutterBottom variant="h5" component="div">
                         {projectTitle}
                     </Typography>
@@ -39,7 +38,7 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
                     </Typography>
                     {/*<p>{status}</p>*/}
                 </CardContent>
-                <CardActions style={{borderTop: ' 2px solid rgba(160,160,160,0.2)', marginLeft: "5%"}}>
+                <CardActions className="card-bottom">
                     <Button size="small" href={siteUrl}>See Website</Button>
                     {/*IF MORE DETAILS TO DEPLAY*/}
                     {moreDetails ? (

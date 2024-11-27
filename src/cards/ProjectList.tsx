@@ -43,6 +43,16 @@ function ProjectList() {
             githubURL: "NONE"
 
         },
+        {
+            // imageUrl: "https://live.staticflickr.com/65535/49724709186_c96ab83f4e_b.jpg",
+            imageUrl: "./projects/covid19.png",
+            projectTitle: "COVID19 GraphTraker",
+            projectDetails: "A covid19 graph traker made during the 2020 lockdown (home project)\n",
+            moreDetails: "",
+            siteURL: "http://covid.ymougenel.com/",
+            status: "[Running, BUGGED]",
+            githubURL: "https://github.com/ymougenel/covid19-graph"
+        },
         // {
         //     imageUrl: "https://mui.com/static/images/cards/contemplative-reptile.jpg",
         //     projectTitle: "Un autre projet",
