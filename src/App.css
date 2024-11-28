@@ -46,14 +46,16 @@ body,
     /*background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a6a0b014-7dd0-40ab-8337-15e1bda499c2/dfty7zv-a36b7c69-3bb1-429b-8d60-0e8db2b949d5.png/v1/fill/w_1280,h_718,q_80,strp/dream_library_by_soraxtm_dfty7zv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvYTZhMGIwMTQtN2RkMC00MGFiLTgzMzctMTVlMWJkYTQ5OWMyXC9kZnR5N3p2LWEzNmI3YzY5LTNiYjEtNDI5Yi04ZDYwLTBlOGRiMmI5NDlkNS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7EsxvH3Cj2odAYUtlauXgdCSWqrV_rPLz8X__6bbPXE'); */
     background-image: url('https://www.observatoiredeleurope.com/wp-content/uploads/2024/04/1712595277_The-Matrix-25-ans-apres-une-nouvelle-conspiration-virale.jpg');
     background-size: cover;
-    background-attachment: fixed; /* L'image reste fixe lors du scroll */
+    background-attachment: fixed;
     background-position: center;
-    height: 100%; /* L'image couvre toute la hauteur */
-    width: 100%; /* L'image couvre toute la largeur */
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Contenu centré horizontalement, mais en haut */
-    padding-top: 30px; /* Ajout d'un espace en haut pour éviter le bord */
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
 }
 .question {
     color: rgb(240, 250, 250);
@@ -61,7 +63,7 @@ body,
     font-size: 5rem;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: #00ba00;
+    text-shadow: 2px 2px #14ff00;
 }
 /*@keyframes App-logo-spin {*/
 /*    from {*/

@@ -10,8 +10,8 @@ function App() {
             {/*        className="giphy-embed" allowFullScreen></iframe>*/}
             <br />
             <br />
-            <h1 className="question">Are you looking for any of those projects?
-                <ProjectList/></h1>
+            <h1 className="question">Are you looking for any of those projects?</h1>
+            <ProjectList/>
             {/*<header className="App-header">*/}
             {/*  <img src={logo} className="App-logo" alt="logo" />*/}
             {/*  <p>*/}
