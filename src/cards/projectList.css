@@ -6,28 +6,5 @@
     flex-wrap: wrap;
     justify-content: space-around;
     /*background-color: #919196;*/
-    height: 300px;
-}
-
-.card {
-    margin-top: 15px;
-    width: 500px;
-    height: 300px;
-    boxShadow: "11px 7px 5px 2px black";
-    border: 2px solid rgba(160,160,160,0.2);
-}
-
-.card-media {
-    height: 45%;
-}
-
-.card-content {
-    border-top: 2px solid rgba(160,160,160,0.2);
-    padding: 8px;
-}
-
-.card-bottom {
-    height: 10%;
-    borderTop: 2px solid rgba(160,160,160,0.2);
-    marginLeft: "5%";
+    height: 100%;
 }

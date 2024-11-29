@@ -19,7 +19,7 @@ function ProjectList() {
             projectTitle: "Histoire de rues",
             projectDetails: "Un site web  présentant une vision cartographique de l'histoire de Paris, en collaboration avec le youtubeur/historien Sur le champ",
             moreDetails: "",
-            status: ["Running, MAINTAINED"],
+            status: ["Running", "MAINTAINED"],
             siteURL: "https://streets-highlight.netlify.app/",
             githubURL: "https://github.com/ymougenel/streets_highlight"
         },
@@ -30,7 +30,7 @@ function ProjectList() {
             moreDetails: "See article",
             learnMoreLink: "https://www.naowak.fr/article/kavu-poc",
             siteURL: "https://streets-highlight.netlify.app/",
-            status: "[Unkown]",
+            status: ["Unkown"],
             githubURL: "https://github.com/Kavu-Dechet",
 
         },
@@ -39,7 +39,7 @@ function ProjectList() {
             projectTitle: "Enseignement SNT/NSI",
             projectDetails: "A simple web site containing most of my teacher courses. Covers high school computer lessons",
             siteURL: "http://nsi.ymougenel.com/",
-            status: "[Running, NOT_MAINTAINED]",
+            status: ['Running', 'NOT_MAINTAINED'],
             githubURL: "NONE"
 
         },
@@ -50,9 +50,9 @@ function ProjectList() {
             projectDetails: "A covid19 graph traker made during the 2020 lockdown (home project)\n",
             moreDetails: "",
             siteURL: "http://covid.ymougenel.com/",
-            status: "[Running, BUGGED]",
+            status: ["Running", "Bugged"],
             githubURL: "https://github.com/ymougenel/covid19-graph"
-        },
+        }
         // {
         //     imageUrl: "https://mui.com/static/images/cards/contemplative-reptile.jpg",
         //     projectTitle: "Un autre projet",

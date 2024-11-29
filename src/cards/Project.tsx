@@ -1,5 +1,5 @@
 import React from 'react';
-import './projectList.css';
+import './project.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
@@ -17,14 +17,14 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
     githubURL: any,
 
 }) {
+    // Custom Card with hover transition
     const StyledCard = styled(Card)(({ theme }) => ({
         transition: "transform 0.15s ease-in-out",
         "&:hover": { transform: "scale3d(1.02, 1.02, 1)" },
     }))
-    // TODO: use global borderTop config (var???)
     return (
-        <div>
             <StyledCard className="card">
+                <div className="ribbon">{status[0]}</div>
                 <CardMedia className="card-media"
                     image={imageUrl}
                     title="green iguana"
@@ -54,37 +54,6 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
                     ) : (<p></p>)}
                 </CardActions>
             </StyledCard>
-        </div>
-        // <div className="Card">
-        //     <div className="col s10 m4">
-        //         <Card sx={{maxWidth: 345}}>
-        //             <CardMedia
-        //                   sx={{ height: 140 }}
-        //                   image={imageUrl}
-        //                   title="green iguana"
-        //               />
-        //               <CardContent>
-        //                   <Typography gutterBottom variant="h5" component="div">
-        //                   </Typography>
-        //                   <Typography variant="body2" color="text.secondary">
-        //                       {projectDetails}
-        //                   </Typography>
-        //               </CardContent>
-        //               <CardActions>
-        //                   <Button size="small">Share</Button>
-        //                   <Button size="small">Learn More</Button>
-        //               </CardActions>
-        //           </Card>
-        //           <hr />
-        //           <Button variant="contained" color="primary">
-        //               Contained Button
-        //           </Button>
-        //
-        //           <Button variant="outlined" color="primary">
-        //               Outlined Button
-        //           </Button>
-        //       </div>
-        //   </div>
     );
 }
 

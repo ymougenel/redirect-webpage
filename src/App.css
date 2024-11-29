@@ -57,7 +57,7 @@ body,
     align-content: center;
     align-items: center;
 }
-.question {
+#question {
     color: rgb(240, 250, 250);
     font-family: "Georgia", "Times", "serif"; /* Warm, classic fonts */
     font-size: 5rem;

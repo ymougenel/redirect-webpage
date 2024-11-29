@@ -1,0 +1,61 @@
+.cardAction {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+}
+
+
+.card {
+    /*overflow: hidden;*/
+    margin-top: 15px;
+    width: 30%;
+    height: 45%;
+    boxShadow: "11px 7px 5px 2px black";
+    border: 2px solid rgba(160,160,160,0.2);
+    /*transition: transform 0.15s ease-in-out;*/
+}
+
+@media (max-width: 768px) { /* Adapte pour les écrans mobiles */
+    #question {
+        font-size: 1.2em;
+    }
+    .card {
+        width: 100%; /* Prend toute la largeur */
+        height: 30vh; /* 10% de la hauteur de l'écran */
+        border-radius: 0; /* Optionnel : supprime les coins arrondis */
+    }
+}
+
+.card :hover {
+    /*transform: scale3d(1.02, 1.02, 1)*/
+}
+.card-media {
+    height: 45%;
+}
+
+.card-content {
+    border-top: 2px solid rgba(160,160,160,0.2);
+    padding: 8px;
+}
+
+.card-bottom {
+    height: 10%;
+    borderTop: 2px solid rgba(160,160,160,0.2);
+    marginLeft: "5%";
+}
+
+.ribbon {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    width: 150px;
+    background: #ff6347; /* Tomato color */
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    /*inset: 0 0 auto auto;*/
+    /*background: green;*/
+    /*transform: translate(30%) rotate(45deg);*/
+}
