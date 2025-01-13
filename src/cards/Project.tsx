@@ -49,8 +49,9 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
                     </ThemeProvider>
                 </CardContent>
                 <CardActions className="card-bottom">
-                    <Button size="medium" href={siteUrl}>See Website</Button>
-                    {/*IF MORE DETAILS TO DEPLAY*/}
+                    {siteUrl ? (
+                        <Button size="medium" href={siteUrl}>See Website</Button>
+                    ) : (<p></p>)}
                     {moreDetails ? (
                         <Button size="medium" href={learnMoreLink}>{moreDetails}</Button>
                     ) : (<p></p>)}

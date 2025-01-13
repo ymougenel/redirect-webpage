@@ -17,7 +17,7 @@ function ProjectList() {
         {
             imageUrl: "./projects/histoire_de_rues.png",
             projectTitle: "Histoire de rues",
-            projectDetails: "Un site web  présentant une vision cartographique de l'histoire de Paris, en collaboration avec le youtubeur/historien Sur le champ",
+            projectDetails: "A website offering a cartographic view of the history of Paris, in collaboration with the YouTuber/historian \"Sur le Champ.\"",
             moreDetails: "",
             status: ["Running", "MAINTAINED"],
             siteURL: "https://streets-highlight.netlify.app/",
@@ -29,7 +29,7 @@ function ProjectList() {
             projectDetails: "An environnemental project in Mayotte",
             moreDetails: "See article",
             learnMoreLink: "https://www.naowak.fr/article/kavu-poc",
-            siteURL: "https://streets-highlight.netlify.app/",
+            siteURL: "",
             status: ["Unknown"],
             githubURL: "https://github.com/Kavu-Dechet",
 
@@ -37,11 +37,21 @@ function ProjectList() {
         {
             imageUrl: "https://materializecss.com/images/sample-1.jpg",
             projectTitle: "Enseignement SNT/NSI",
-            projectDetails: "A simple web site containing most of my teacher courses. Covers high school computer lessons",
+            projectDetails: "A simple web site containing most of my teacher courses. It covers high school computer lessons",
             siteURL: "http://nsi.ymougenel.com/",
             status: ['Running', 'NOT_MAINTAINED'],
             githubURL: "NONE"
 
+        },
+        {
+            imageUrl: "http://blog.ymougenel.com/assets/reference_collector.png",
+            projectTitle: "Reference Collector",
+            projectDetails: "A collaborative bookmark project, for storing and sharing webpage link across any device\n",
+            siteURL: "",
+            moreDetails: "See article",
+            learnMoreLink: "http://blog.ymougenel.com/ReferenceCollector/",
+            status: ["DOWN"],
+            githubURL: "https://github.com/ymougenel/referenceCollector"
         },
         {
             // imageUrl: "https://live.staticflickr.com/65535/49724709186_c96ab83f4e_b.jpg",
