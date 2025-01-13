@@ -1,5 +1,4 @@
 #projects-container {
-    padding-top: 20px;
     margin-top: 3px;
     display: flex;
     flex-direction: row;
@@ -7,4 +6,11 @@
     justify-content: space-around;
     /*background-color: #919196;*/
     height: 100%;
+
+
+}
+
+h1 {
+    margin-top: 8px;
+    margin-bottom: 3px;
 }

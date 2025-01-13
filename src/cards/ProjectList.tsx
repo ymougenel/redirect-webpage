@@ -46,7 +46,7 @@ function ProjectList() {
         {
             imageUrl: "http://blog.ymougenel.com/assets/reference_collector.png",
             projectTitle: "Reference Collector",
-            projectDetails: "A collaborative bookmark project, for storing and sharing webpage link across any device\n",
+            projectDetails: "A collaborative bookmark project, for storing and sharing webpage link across any device.",
             siteURL: "",
             moreDetails: "See article",
             learnMoreLink: "http://blog.ymougenel.com/ReferenceCollector/",

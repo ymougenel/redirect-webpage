@@ -24,8 +24,11 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
     }));
     const card_theme = createTheme({
         typography: {
+            h4: {
+                fontSize: "1.1em",
+            },
             body1: {
-                fontSize: '1.08em',
+                fontSize: '0.75em',
             }
         },
     });
