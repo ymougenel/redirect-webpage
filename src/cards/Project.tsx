@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 import Button from '@mui/material/Button';
-import {CardActions, CardMedia, styled, Typography} from "@mui/material";
+import {CardActions, CardMedia, createTheme, styled, ThemeProvider, Typography} from "@mui/material";
 
 function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, siteUrl, githubURL, learnMoreLink}: { //TODO define righ props types
     projectTitle: any,
@@ -21,7 +21,15 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
     const StyledCard = styled(Card)(({ theme }) => ({
         transition: "transform 0.15s ease-in-out",
         "&:hover": { transform: "scale3d(1.02, 1.02, 1)" },
-    }))
+    }));
+    const card_theme = createTheme({
+        typography: {
+            body1: {
+                fontSize: '1.08em',
+            }
+        },
+    });
+
     return (
             <StyledCard className="card">
                 <div className="ribbon">{status[0]}</div>
@@ -30,19 +38,21 @@ function Project({projectTitle, imageUrl, projectDetails, moreDetails, status, s
                     title="green iguana"
                 />
                 <CardContent className="card-content">
-                    <Typography gutterBottom variant="h5" component="div">
-                        {projectTitle}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        {projectDetails}
-                    </Typography>
-                    {/*<p>{status}</p>*/}
+                    <ThemeProvider theme={card_theme}>
+                        <Typography gutterBottom variant="h4" component="div">
+                            {projectTitle}
+                        </Typography>
+                        <Typography className="project-details" variant="body1" color="text.secondary">
+                            {projectDetails}
+                        </Typography>
+                        {/*<p>{status}</p>*/}
+                    </ThemeProvider>
                 </CardContent>
                 <CardActions className="card-bottom">
-                    <Button size="small" href={siteUrl}>See Website</Button>
+                    <Button size="medium" href={siteUrl}>See Website</Button>
                     {/*IF MORE DETAILS TO DEPLAY*/}
                     {moreDetails ? (
-                        <Button size="small" href={learnMoreLink}>{moreDetails}</Button>
+                        <Button size="medium" href={learnMoreLink}>{moreDetails}</Button>
                     ) : (<p></p>)}
                     {githubURL !== "NONE" ? (
                         // <div style={{display: "flex", flexDirection: "row", alignItems: "flex-end"}}>

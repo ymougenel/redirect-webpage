@@ -30,7 +30,7 @@ function ProjectList() {
             moreDetails: "See article",
             learnMoreLink: "https://www.naowak.fr/article/kavu-poc",
             siteURL: "https://streets-highlight.netlify.app/",
-            status: ["Unkown"],
+            status: ["Unknown"],
             githubURL: "https://github.com/Kavu-Dechet",
 
         },
