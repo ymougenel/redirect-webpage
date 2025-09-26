@@ -15,6 +15,16 @@ function ProjectList() {
             githubURL: "https://github.com/ymougenel/ymougenel.github.io",
         },
         {
+            imageUrl: "./projects/aws_site_screen.png",
+            projectTitle: "AWS Services Summary",
+            projectDetails: "This project provides a comprehensive study companion for the AWS Certified Solutions Architect Associate certification.",
+            moreDetails: "",
+            // moreDetails: "The website organizes AWS services by thematic areas, and for each service you will find: A revision card with the key concepts, service best practices, and a quizz.",
+            siteURL: "https://aws.ymougenel.com/",
+            status: ["Running", "MAINTAINED"],
+            githubURL: "https://github.com/ymougenel/aws-certification",
+        },
+        {
             imageUrl: "./projects/histoire_de_rues.png",
             projectTitle: "Histoire de rues",
             projectDetails: "A website offering a cartographic view of the history of Paris, in collaboration with the YouTuber/historian \"Sur le Champ.\"",
@@ -26,7 +36,7 @@ function ProjectList() {
         {
             imageUrl: "https://www.naowak.fr/articles/kavu-poc/preview.png",
             projectTitle: "Kavu Déchet",
-            projectDetails: "An environnemental project in Mayotte",
+            projectDetails: "An environnemental project made in Mayotte",
             moreDetails: "See article",
             learnMoreLink: "https://www.naowak.fr/article/kavu-poc",
             siteURL: "",
