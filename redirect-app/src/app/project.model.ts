@@ -1,8 +1,10 @@
 export interface Project {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  projectLink: string;
-  githubLink: string;
+  imageUrl: string;
+  projectTitle: string;
+  projectDetails: string;
+  moreDetails?: string;
+  status: string[];
+  siteURL: string;
+  githubURL: string;
+  learnMoreLink?: string;
 }

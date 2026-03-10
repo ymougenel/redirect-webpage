@@ -1,11 +1,16 @@
 <div class="bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden transition-shadow">
-  <img [src]="project.image" alt="{{ project.title }}" class="w-full h-48 object-cover bg-gray-200">
+  <img [src]="project.imageUrl" alt="{{ project.projectTitle }}" class="w-full h-48 object-cover bg-gray-200">
   <div class="p-6">
-    <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
-    <p class="text-gray-600 mb-4 line-clamp-3">{{ project.description }}</p>
+    <h3 class="text-xl font-semibold mb-2">{{ project.projectTitle }}</h3>
+    <p class="text-gray-600 mb-4 h-20 line-clamp-3">{{ project.projectDetails }}</p>
+    <div *ngIf="project.moreDetails" class="text-gray-500 text-sm mb-4">{{ project.moreDetails }}</div>
+    <div class="flex flex-wrap gap-2 mb-4">
+<!--      <span *ngFor="let stat of project.status" class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-md">{{ stat }}</span>-->
+    </div>
     <div class="flex gap-3">
-      <a [href]="project.projectLink" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">View Project</a>
-      <a [href]="project.githubLink" target="_blank" class="bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-4 py-2 rounded-md text-sm font-medium transition-colors">GitHub</a>
+      <a *ngIf="project.siteURL" [href]="project.siteURL" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">View Project</a>
+      <a *ngIf="project.githubURL && project.githubURL !== 'NONE'" [href]="project.githubURL" target="_blank" class="bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-4 py-2 rounded-md text-sm font-medium transition-colors">GitHub</a>
+      <a *ngIf="project.learnMoreLink" [href]="project.learnMoreLink" target="_blank" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Learn More</a>
     </div>
   </div>
 </div>
