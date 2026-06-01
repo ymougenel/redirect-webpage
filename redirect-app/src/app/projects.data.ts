@@ -9,6 +9,14 @@ export const projectsData = [
         githubURL: "https://github.com/ymougenel/ymougenel.github.io",
     },
     {
+        imageUrl: "projects/chess_analysis.png",
+        projectTitle: "Chess Analysis",
+        projectDetails: "Explore rating trends, win/draw/loss ratios and opening performance to understand how a chess player has been performing over time.",
+        status: ["Running", "MAINTAINED"],
+        siteURL: "https://chess.ymougenel.com",
+        githubURL: "https://github.com/ymougenel/chess-history-analysis",
+    },
+    {
         imageUrl: "projects/aws_site_screen.png",
         projectTitle: "AWS Services Summary",
         projectDetails: "This project provides a comprehensive study companion for the AWS Certified Solutions Architect Associate certification.",
